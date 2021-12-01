@@ -1,0 +1,128 @@
+body {
+  background-color: #09FBD3;
+  color: #FE53BB;
+}
+
+.board {
+  border-collapse: collapse;
+  background-color: black;
+}
+
+.board td{
+  /* border: 1px solid black; */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.grid-column{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu{
+  margin-left: 1.5rem;
+  height: 37.5rem;
+  padding-inline: 2rem;
+  background-color: #3DC4C9;
+  color: #F5D300;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu button{
+  width:100%;
+  background-color: #FE53BB;
+  color: #F5D300;
+  margin-bottom: .5rem;
+  padding: .25rem;
+  font-size: .85rem;
+  border-radius: 3px;
+}
+
+.endgame-modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 35%;
+  left: 35%;
+  border: 2px groove #09FBD3;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px #3DC4C9;
+  padding: 2rem;
+  background-color: #F5D300;
+  text-align: center;
+}
+
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.menu-modal{
+  display: none;
+  background-color: #FE53BB;
+  margin-bottom: .5rem;
+  margin-top: -.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+  max-height: 10rem;
+}
+
+.menu-modal input {
+  margin-bottom: .25rem;
+  margin-top: .25rem;
+  border: 1px solid #09FBD3;
+  border-radius: 3px;
+}
+
+.tetris-container{
+  margin-left: 8rem;
+  margin-right: 6rem;
+}
+
+.score-box{
+  text-align: center;
+  width: 15rem;
+}
+
+.score-box div {
+  display: none;
+  background-color: #F5D300;
+  border-radius: 3px;
+  box-shadow: 2px 5px 4px #3DC4C9;
+  padding: 1rem;
+}
+
+.score-box ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.score-box li{
+  margin: .75rem;
+  font-size: 1.25rem;
+}
+
+
+@media screen and (max-width: 1050px){
+  .tetris-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .menu{
+    margin-right: 1.5rem;
+    height: 35rem;
+    width: 100%;
+  }
+
+  .score-box{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
